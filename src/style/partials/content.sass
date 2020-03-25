@@ -1,0 +1,227 @@
+// Hero
+
+.hero
+  margin-top: -64px
+  min-height: 650px
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  position: relative
+  overflow: hidden
+  &__cta
+    z-index: 1
+    position: relative
+    padding-bottom: 155px
+  video
+    object-fit: cover
+    position: absolute
+    top: 50%
+    left: 50%
+    min-width: 100%
+    min-height: 100%
+    max-width: 100%
+    width: auto
+    height: auto
+    z-index: 0
+    transform: translateX(-50%) translateY(-50%)
+
+// People
+
+.people
+  padding: 70px 0 30px 0
+  p
+    max-width: 370px
+    color: #414752
+    font-size: 30px
+    font-weight: 700
+    line-height: 38.67px
+    b
+      color: #55d7b3
+      font-weight: 700
+  &__image
+    position: relative
+    margin-left: 35px
+    .shape
+      img
+        position: absolute
+        padding-right: 0
+      &:first-child
+        img
+          left: -25px
+          top: 27px
+          width: 60px
+      &:nth-child(2)
+        img
+          left: 115px
+          top: 110px
+          z-index: -1
+          width: 220px
+    img
+      max-width: 335px
+      z-index: 1
+      position: relative
+      padding-right: 36px
+  &__phrase
+    width: 100%
+    text-align: center
+    margin-top: 68px
+    .title
+      color: #f6f7f7
+      font-size: 87px
+      font-weight: 700
+      line-height: 1
+      text-transform: uppercase
+      letter-spacing: 0.58px
+      margin-bottom: 0
+
+// Form
+
+.form
+  padding: 120px 0 110px 0
+  background-color: #277ab9
+  background-image: linear-gradient(to right, #054b87 0%, #277ab9 51%, #55d7b3 100%)
+  .step_2
+    display: none
+  .step_3
+    display: none
+  &__image
+    position: relative
+    .shape
+      z-index: -1
+      img
+        position: absolute
+        left: 0
+        top: -27px
+        width: 169px
+        padding-left: 0
+    img
+      max-width: 335px
+      z-index: 1
+      position: relative
+      padding-left: 29px
+    video
+      padding-left: 29px
+      object-fit: cover
+  .title
+    color: white
+    font-size: 42px
+    font-weight: 700
+    line-height: 48px
+    margin-bottom: 25px
+  p
+    color: white
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+    margin-bottom: 25px
+  .form_main
+    width: 265px
+    .notification
+      color: #fc516f
+      font-size: 12px
+      line-height: 1.2
+      margin-top: 5px
+    label
+      width: 100%
+      position: relative
+      margin-bottom: 25px
+      &:before
+        position: absolute
+        content: ''
+        bottom: 0
+        left: 0
+        width: 1px
+        height: 6px
+        background-color: #b5c1cb
+      &:after
+        position: absolute
+        content: ''
+        bottom: 0
+        right: 0
+        width: 1px
+        height: 6px
+        background-color: #b5c1cb
+    input:-webkit-autofill
+      background-color: transparent !important
+    input[type="email"]
+      width: 100%
+      background-color: transparent
+      border: 0
+      border-bottom: 1px solid #b5c1cb
+      border-radius: 0
+      color: #cdcfcf
+      font-size: 12px
+      font-weight: 300
+      padding: 0 10px 10px 10px
+      outline: none
+      appearance: none
+      &::placeholder
+        color: #cdcfcf
+        font-size: 12px
+        font-weight: 300
+      &:focus
+        background-color: transparent
+    input[type="submit"]
+      border: 0
+      cursor: pointer
+  .form_questions
+    display: flex
+    flex-wrap: wrap
+    &__title
+      width: 100%
+      color: white
+      font-size: 16px
+      font-weight: 700
+      line-height: 24px
+    label
+      width: 50%
+      display: flex
+      align-items: center
+      position: relative
+      cursor: pointer
+      user-select: none
+      p
+        width: 100%
+        color: white
+        font-size: 10px
+        font-weight: 300
+        line-height: 1.2
+        margin-bottom: 0
+      input
+        position: absolute
+        opacity: 0
+        cursor: pointer
+        height: 0
+        width: 0
+      input:checked ~ .checkmark:after
+        display: block
+      .checkmark
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        height: 10px
+        width: 11px
+        border: 1px solid white
+        background-color: transparent
+        margin-right: 9px
+        &:after
+          content: ""
+          position: absolute
+          display: none
+          width: 4px
+          height: 4px
+          background-color: white
+    input[type="submit"]
+      border: 0
+      cursor: pointer
+      margin-top: 20px
+  .form_sent
+    p
+      color: white
+      font-size: 12px
+      font-weight: 400
+      margin: 0 7px 0 0
